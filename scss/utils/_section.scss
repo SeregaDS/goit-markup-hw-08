@@ -1,0 +1,23 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &--promo {
+    display: none;
+  }
+
+  &--team {
+    background-color: $bgc-secondary;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--promo {
+      display: block;
+      padding-top: 0;
+    }
+  }
+}

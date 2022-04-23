@@ -1,0 +1,38 @@
+@media screen and (min-width: 1200px) {
+  .promo {
+    @extend %section-title;
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+
+  .promo__list {
+    display: flex;
+  }
+
+  .promo__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .promo__image {
+    position: relative;
+  }
+
+  .promo__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: $promo-overlay-bgc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .promo__overlay-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $text-white-color;
+  }
+}
