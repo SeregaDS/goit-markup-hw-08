@@ -1,9 +1,12 @@
+@media screen and (max-width: 1199px) {
+  .section--promo {
+    display: none;
+  }
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  &--promo {
-    display: none;
-  }
 
   &--team {
     background-color: $bgc-secondary;
