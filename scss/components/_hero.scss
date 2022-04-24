@@ -3,13 +3,22 @@
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  max-width: 540px; // больше - мылит
   background-color: $bgc-hero;
   background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     image-set('../images/bg/hero-bg-mob.jpg' 1x, '../images/bg/hero-bg-mob@x2.jpg' 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  // crossbroser
+
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   .hero {
+  //     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //       url('../images/bg/hero-bg-mob@x2.jpg');
+  //   }
+  // }
 }
 
 .hero__title {
@@ -35,15 +44,6 @@
   }
 }
 
-// crossbroser
-
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/bg/hero-bg-mob@x2.jpg');
-  }
-}
-
 // !tablet
 
 @media screen and (min-width: $min-w-tablet) {
@@ -60,12 +60,12 @@
 
   // crossbroser
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/bg/hero-bg-tab@x2.jpg');
-    }
-  }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   .hero {
+  //     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //       url('../images/bg/hero-bg-tab@x2.jpg');
+  //   }
+  // }
 }
 
 // *Добавлена точка из субьективных соображений,
@@ -81,12 +81,12 @@
 
   // crossbroser
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/bg/hero-bg-desk@x2.jpg');
-    }
-  }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   .hero {
+  //     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //       url('../images/bg/hero-bg-desk@x2.jpg');
+  //   }
+  // }
 }
 
 // !desk
@@ -102,10 +102,10 @@
 
   // crossbroser
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/bg/hero-bg-desk@x2.jpg');
-    }
-  }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   .hero {
+  //     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //       url('../images/bg/hero-bg-desk@x2.jpg');
+  //   }
+  // }
 }

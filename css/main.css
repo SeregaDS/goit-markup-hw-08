@@ -506,6 +506,50 @@ button {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .menu__button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    z-index: 99;
+  }
+  .menu__button .menu__close {
+    display: none;
+  }
+  .menu__button.is-open .menu__close {
+    display: block;
+  }
+  .menu__button.is-open .menu__burger {
+    display: none;
+  }
+  .menu__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .menu__container.is-open {
+    display: block;
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,31 +706,19 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .header__nav {
+  .nav {
     display: none;
   }
   .contact {
-    display: none;
-  }
-  .header__container {
-    position: relative;
-  }
-  .menu__button {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: transparent;
-  }
-  .menu__close {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .menu__button {
+    display: none;
+  }
+  .menu__container {
     display: none;
   }
   .header__container {
@@ -741,7 +773,7 @@ button {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  max-width: 540px;
   background-color: #2f303a;
   background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/bg/hero-bg-mob.jpg") 1x, url("../images/bg/hero-bg-mob@x2.jpg") 2x);
   background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/bg/hero-bg-mob.jpg" 1x, "../images/bg/hero-bg-mob@x2.jpg" 2x);
@@ -769,12 +801,6 @@ button {
   background-color: #188ce8;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg-mob@x2.jpg");
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 849px;
@@ -787,23 +813,11 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg-tab@x2.jpg");
-  }
-}
-
 @media screen and (min-width: 850px) {
   .hero {
     max-width: 1199px;
     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/bg/hero-bg-desk.jpg") 1x, url("../images/bg/hero-bg-desk@x2.jpg") 2x);
     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/bg/hero-bg-desk.jpg" 1x, "../images/bg/hero-bg-desk@x2.jpg" 2x);
-  }
-}
-
-@media screen and (min-width: 850px) and (min-device-pixel-ratio: 2), screen and (min-width: 850px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 850px) and (min-resolution: 192dpi), screen and (min-width: 850px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg-desk@x2.jpg");
   }
 }
 
@@ -814,12 +828,6 @@ button {
     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/bg/hero-bg-desk.jpg" 1x, "../images/bg/hero-bg-desk@x2.jpg" 2x);
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg-desk@x2.jpg");
   }
 }
 
