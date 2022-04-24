@@ -123,13 +123,23 @@
           <ul class="promo__list">
             <li class="promo__item">
               <div class="promo__image">
-                <img
-                  srcset="./images/img-1-moz.jpg 1x, ./images/img-1-moz@x2.jpg 2x"
-                  src="./images/img-1-moz.jpg"
-                  alt="набор кода"
-                  width="370"
-                  height="294"
-                />
+                <!-- комбо вариант изображений -->
+                <picture
+                  ><source
+                    srcset="./images/promo1/d.webp 1x, ./images/promo1/dx2.webp 2x"
+                    media="(min-width:1200px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/promo1/d.jpg 1x, ./images/promo1/dx2.jpg 2x"
+                    media="(min-width:1200px)"
+                    type="image/jpg" />
+                  <img
+                    srcset="./images/promo1/d.jpg 1x, ./images/promo1/dx2.jpg 2x"
+                    src="./images/promo1/d.jpg"
+                    alt="набор кода"
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="promo__overlay">
                   <p class="promo__overlay-text">Десктопные приложения</p>
                 </div>
@@ -137,13 +147,22 @@
             </li>
             <li class="promo__item">
               <div class="promo__image">
-                <img
-                  srcset="./images/img-2-moz.jpg 1x, ./images/img-2-moz@x2.jpg 2x"
-                  src="./images/img-2-moz.jpg"
-                  alt="работа над стилями"
-                  width="370"
-                  height="294"
-                />
+                <picture
+                  ><source
+                    srcset="./images/promo2/d.webp 1x, ./images/promo2/dx2.webp 2x"
+                    media="(min-width:1200px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/promo2/d.jpg 1x, ./images/promo2/dx2.jpg 2x"
+                    media="(min-width:1200px)"
+                    type="image/jpg" />
+                  <img
+                    srcset="./images/promo2/d.jpg 1x, ./images/promo2/dx2.jpg 2x"
+                    src="./images/promo2/d.jpg"
+                    alt="работа над стилями"
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="promo__overlay">
                   <p class="promo__overlay-text">Мобильные приложения</p>
                 </div>
@@ -151,13 +170,22 @@
             </li>
             <li class="promo__item">
               <div class="promo__image">
-                <img
-                  srcset="./images/img-3-moz.jpg 1x, ./images/img-3-moz@x2.jpg 2x"
-                  src="./images/img-3-moz.jpg"
-                  alt="подбор цвета"
-                  width="370"
-                  height="294"
-                />
+                <picture
+                  ><source
+                    srcset="./images/promo3/d.webp 1x, ./images/promo3/dx2.webp 2x"
+                    media="(min-width:1200px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/promo3/d.jpg 1x, ./images/promo3/dx2.jpg 2x"
+                    media="(min-width:1200px)"
+                    type="image/jpg" />
+                  <img
+                    srcset="./images/promo3/d.jpg 1x, ./images/promo3/dx2.jpg 2x"
+                    src="./images/promo3/d.jpg"
+                    alt="подбор цвета"
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="promo__overlay">
                   <p class="promo__overlay-text">Дизайнерские решения</p>
                 </div>
@@ -174,7 +202,39 @@
             <!-- Игорь Демьяненко -->
             <li class="team__profile">
               <div class="team__badge">
-                <img src="./images/1igor1/m.jpg" alt="фото дизайнера Игоря Демьяненко" />
+                <picture>
+                  <source
+                    srcset="./images/1igor1/d.webp 1x, ./images/1igor1/dx2.webp 2x"
+                    media="(min-width:1200px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/1igor1/d.jpg 1x, ./images/1igor1/dx2.jpg 2x"
+                    media="(min-width:1200px)"
+                    type="image/jpg" />
+
+                  <source
+                    srcset="./images/1igor1/t.webp 1x, ./images/1igor1/tx2.webp 2x"
+                    media="(min-width:768px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/1igor1/t.jpg 1x, ./images/1igor1/tx2.jpg 2x"
+                    media="(min-width:768px)"
+                    type="image/jpg" />
+
+                  <source
+                    srcset="./images/1igor1/m.webp 1x, ./images/1igor1/mx2.webp 2x"
+                    media="(max-width:767px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/1igor1/m.jpg 1x, ./images/1igor1/mx2.jpg 2x"
+                    media="(max-width:767px)"
+                    type="image/jpg" />
+
+                  <img
+                    src="./images/1igor1/d.jpg"
+                    alt="фото дизайнера
+                Игоря Демьяненко"
+                /></picture>
               </div>
               <div class="team__meta">
                 <h3 class="team__member">Игорь Демьяненко</h3>
@@ -232,7 +292,36 @@
             <!-- Ольга Репина -->
             <li class="team__profile">
               <div class="team__badge">
-                <img src="./images/a2-mob.jpg" alt="фото разработчика Ольга Репина" />
+                <picture>
+                  <source
+                    srcset="./images/2olga2/d.webp 1x, ./images/2olga2/dx2.webp 2x"
+                    media="(min-width:1200px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/2olga2/d.jpg 1x, ./images/2olga2/dx2.jpg 2x"
+                    media="(min-width:1200px)"
+                    type="image/jpg" />
+
+                  <source
+                    srcset="./images/2olga2/t.webp 1x, ./images/2olga2/tx2.webp 2x"
+                    media="(min-width:768px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/2olga2/t.jpg 1x, ./images/2olga2/tx2.jpg 2x"
+                    media="(min-width:768px)"
+                    type="image/jpg" />
+
+                  <source
+                    srcset="./images/2olga2/m.webp 1x, ./images/2olga2/mx2.webp 2x"
+                    media="(max-width:767px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/2olga2/m.jpg 1x, ./images/2olga2/mx2.jpg 2x"
+                    media="(max-width:767px)"
+                    type="image/jpg" />
+
+                  <img src="./images/2olga2/d.jpg" alt="фото разработчика Ольга Репина"
+                /></picture>
               </div>
               <div class="team__meta">
                 <h3 class="team__member">Ольга Репина</h3>
@@ -290,7 +379,36 @@
             <!-- Николай Тарасов -->
             <li class="team__profile">
               <div class="team__badge">
-                <img src="./images/a3-mob.jpg" alt="фото маркетолога Николая Тарасова" />
+                <picture>
+                  <source
+                    srcset="./images/3niko3/d.webp 1x, ./images/3niko3/dx2.webp 2x"
+                    media="(min-width:1200px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/3niko3/d.jpg 1x, ./images/3niko3/dx2.jpg 2x"
+                    media="(min-width:1200px)"
+                    type="image/jpg" />
+
+                  <source
+                    srcset="./images/3niko3/t.webp 1x, ./images/3niko3/tx2.webp 2x"
+                    media="(min-width:768px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/3niko3/t.jpg 1x, ./images/3niko3/tx2.jpg 2x"
+                    media="(min-width:768px)"
+                    type="image/jpg" />
+
+                  <source
+                    srcset="./images/3niko3/m.webp 1x, ./images/3niko3/mx2.webp 2x"
+                    media="(max-width:767px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/3niko3/m.jpg 1x, ./images/3niko3/mx2.jpg 2x"
+                    media="(max-width:767px)"
+                    type="image/jpg" />
+
+                  <img src="./images/3niko3/d.jpg" alt="фото маркетолога Николая Тарасова"
+                /></picture>
               </div>
               <div class="team__meta">
                 <h3 class="team__member">Николай Тарасов</h3>
@@ -348,7 +466,36 @@
             <!-- Михаил Ермаков -->
             <li class="team__profile">
               <div class="team__badge">
-                <img src="./images/a4-mob.jpg" alt="фото дизайнера Михаила Ермакова" />
+                <picture>
+                  <source
+                    srcset="./images/4miha4/d.webp 1x, ./images/4miha4/dx2.webp 2x"
+                    media="(min-width:1200px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/4miha4/d.jpg 1x, ./images/4miha4/dx2.jpg 2x"
+                    media="(min-width:1200px)"
+                    type="image/jpg" />
+
+                  <source
+                    srcset="./images/4miha4/t.webp 1x, ./images/4miha4/tx2.webp 2x"
+                    media="(min-width:768px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/4miha4/t.jpg 1x, ./images/4miha4/tx2.jpg 2x"
+                    media="(min-width:768px)"
+                    type="image/jpg" />
+
+                  <source
+                    srcset="./images/4miha4/m.webp 1x, ./images/4miha4/mx2.webp 2x"
+                    media="(max-width:767px)"
+                    type="image/webp" />
+                  <source
+                    srcset="./images/4miha4/m.jpg 1x, ./images/4miha4/mx2.jpg 2x"
+                    media="(max-width:767px)"
+                    type="image/jpg" />
+
+                  <img src="./images/4miha4/d.jpg" alt="фото дизайнера Михаила Ермакова"
+                /></picture>
               </div>
               <div class="team__meta">
                 <h3 class="team__member">Михаил Ермаков</h3>
