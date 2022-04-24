@@ -22,12 +22,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .menu__button {
+  .mobile-menu__button {
     display: none;
   }
 
-  .menu__container {
+  .mobile-menu {
     display: none;
+    &.is-open {
+      display: none;
+    }
   }
 
   .header__container {
