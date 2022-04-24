@@ -3,7 +3,7 @@
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  // max-width: 480px;
+  max-width: 480px;
   background-color: $bgc-hero;
   background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     image-set('../images/bg/hero-bg-mob.jpg' 1x, '../images/bg/hero-bg-mob@x2.jpg' 2x);
@@ -35,16 +35,16 @@
   }
 }
 
-// !старый способ
+// crossbroser
 
-// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//   .hero {
-//     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//       url('../images/bg/hero-bg-mob@x2.jpg');
-//   }
-// }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bg/hero-bg-mob@x2.jpg');
+  }
+}
 
-// !через image-set
+// !tablet
 
 @media screen and (min-width: $min-w-tablet) {
   .hero {
@@ -57,22 +57,16 @@
     font-size: 44px;
     line-height: 1.36;
   }
+
+  // crossbroser
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/bg/hero-bg-tab@x2.jpg');
+    }
+  }
 }
-
-// !старый способ
-
-// @media screen and (min-width: $min-w-tablet) {
-//   .hero {
-//     max-width: 849px;
-//     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//       url('../images/bg/hero-bg-tab.jpg');
-//   }
-//   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//     .hero {
-//       background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//         url('../images/bg/hero-bg-tab@x2.jpg');
-//     }
-//   }
 
 // *Добавлена точка из субьективных соображений,
 // *предыдущий фон сильно мылит, макет не продуман
@@ -85,13 +79,17 @@
       image-set('../images/bg/hero-bg-desk.jpg' 1x, '../images/bg/hero-bg-desk@x2.jpg' 2x);
   }
 
-  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //   .hero {
-  //     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //       url('../images/bg/hero-bg-desk@x2.jpg');
-  //   }
-  // }
+  // crossbroser
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/bg/hero-bg-desk@x2.jpg');
+    }
+  }
 }
+
+// !desk
 
 @media screen and (min-width: $min-w-desktop) {
   .hero {
@@ -101,10 +99,13 @@
     padding-top: 200px;
     padding-bottom: 200px;
   }
-  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //   .hero {
-  //     background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //       url('../images/bg/hero-bg-desk@x2.jpg');
-  //   }
-  // }
+
+  // crossbroser
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(359deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/bg/hero-bg-desk@x2.jpg');
+    }
+  }
 }
