@@ -19,9 +19,29 @@
   .contact {
     display: none;
   }
+
+  .header__container {
+    position: relative;
+  }
+
+  .menu__button {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    background-color: transparent;
+  }
+
+  .menu__close {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+
   .header__container {
     display: flex;
     align-items: center;
