@@ -1,5 +1,5 @@
 @media screen and (max-width: 1199px) {
-  .section--promo {
+  .section--promo-hidden {
     display: none;
   }
 }
@@ -14,10 +14,13 @@
 }
 
 .section__title {
+  margin-bottom: 30px;
+
   font-size: 28px;
   line-height: 1.17;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
+
   &--title-hidden {
     @extend %visually-hidden;
   }
@@ -28,9 +31,17 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    &--promo {
+    &--promo-hidden {
       display: block;
+    }
+
+    &--promo-paddingtop-fix {
       padding-top: 0;
     }
+  }
+
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
   }
 }

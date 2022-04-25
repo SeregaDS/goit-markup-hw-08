@@ -889,7 +889,7 @@ button {
 }
 
 @media screen and (max-width: 1199px) {
-  .section--promo {
+  .section--promo-hidden {
     display: none;
   }
 }
@@ -904,9 +904,10 @@ button {
 }
 
 .section__title {
+  margin-bottom: 30px;
   font-size: 28px;
   line-height: 1.17;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -915,9 +916,15 @@ button {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  .section--promo {
+  .section--promo-hidden {
     display: block;
+  }
+  .section--promo-paddingtop-fix {
     padding-top: 0;
+  }
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1063,14 +1070,6 @@ button {
 
 @media screen and (min-width: 1200px) {
   .promo {
-    font-size: 28px;
-    line-height: 1.17;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 36px;
-  }
-  .promo__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
