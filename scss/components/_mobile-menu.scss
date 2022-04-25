@@ -4,6 +4,13 @@
   right: 5%;
   display: flex;
   background-color: transparent;
+  z-index: 60;
+  cursor: pointer;
+  transition: $typical-transition-fill;
+
+  &:hover {
+    fill: $action-color;
+  }
 }
 
 .mobile-menu__button .mobile-menu__close {
@@ -23,6 +30,7 @@
   left: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: 50;
 
   background-color: $bgc-main;
 
@@ -30,16 +38,17 @@
 
   opacity: 0;
   pointer-events: none;
-  // visibility: hidden;
-  transform: scale(2);
-  transition: transform 250ms $typical-cubic, opacity 250ms $typical-cubic;
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: transform 250ms $typical-cubic, opacity 250ms $typical-cubic,
+    visibility 250ms $typical-cubic;
 
   &.is-open {
     // display: block;
     opacity: 1;
-    // visibility: visible;
+    visibility: visible;
     pointer-events: all;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 

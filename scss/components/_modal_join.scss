@@ -30,12 +30,12 @@
   background-color: $bgc-main;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  fill: #000000;
+  fill: currentColor;
   cursor: pointer;
   padding: 0;
 
   transform: rotate(0deg);
-  transition: transform 250ms $typical-cubic, $typical-transition-color;
+  transition: transform 250ms $typical-cubic, $typical-transition-fill;
 
   &:hover,
   &:focus {
