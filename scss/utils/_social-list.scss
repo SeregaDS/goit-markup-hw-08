@@ -1,4 +1,4 @@
-.social__list {
+.social {
   display: flex;
   justify-content: center;
 }
@@ -8,14 +8,18 @@
 }
 
 .social__link {
-  display: flex;
-  color: $company-color;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+
+  display: flex;
   justify-content: center;
   align-items: center;
+
+  color: $company-color;
+  border-radius: 50%;
+
   transition: $typical-transition-background, $typical-transition-color;
+
   &--footer {
     color: $text-white-color;
     background-color: $bgc-icon-footer;
@@ -28,6 +32,6 @@
   }
 }
 
-.social__icon-link {
+.social__icon {
   fill: currentColor;
 }
