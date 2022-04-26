@@ -442,7 +442,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section__title--title-hidden, .page-title, .join-form__checkboxhidden {
+.section__title--title-hidden, .page-title, .buttons__input, .join-form__checkboxhidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -1167,7 +1167,16 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: -15px;
   padding-bottom: 40px;
+}
+
+.buttons__item {
+  margin-top: 15px;
+}
+
+.buttons__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .buttons__filter {
@@ -1178,6 +1187,7 @@ button {
   cursor: pointer;
   font-family: inherit;
   text-align: center;
+  display: block;
   background-color: #f5f4fa;
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1193,12 +1203,11 @@ button {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.buttons__item {
-  margin-bottom: 15px;
-}
-
-.buttons__item:not(:first-child) {
-  margin-left: 8px;
+.buttons__input:checked + .buttons__filter {
+  background-color: #2196f3;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .cases {
@@ -1307,6 +1316,9 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .buttons {
+    padding-bottom: 30px;
   }
   .cases {
     -webkit-box-orient: horizontal;
@@ -1538,10 +1550,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .subscribe__label {
-    width: 358px;
-  }
-  .subscribe__form {
+  .subscribe {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1549,6 +1558,9 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .subscribe__label {
+    width: 358px;
   }
   .subscribe__button {
     margin-top: 0;
