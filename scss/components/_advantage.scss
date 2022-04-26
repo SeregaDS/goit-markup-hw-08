@@ -33,7 +33,7 @@
 
 @media screen and (min-width: $min-w-tablet) {
   .advantage {
-    grid-template-columns: repeat(2, calc((100% - 1 * 30px) / 2));
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .advantage__title {
@@ -43,7 +43,7 @@
 
 @media screen and (min-width: $min-w-desktop) {
   .advantage {
-    grid-template-columns: repeat(4, calc((100% - 3 * 30px) / 4));
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
