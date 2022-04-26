@@ -1,4 +1,4 @@
-.subscribe__form {
+.subscribe {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -61,12 +61,13 @@
 }
 
 @media screen and (min-width: $min-w-desktop) {
-  .subscribe__label {
-    width: 358px;
-  }
-  .subscribe__form {
+  .subscribe {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .subscribe__label {
+    width: 358px;
   }
 
   .subscribe__button {
