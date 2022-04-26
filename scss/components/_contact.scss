@@ -1,5 +1,12 @@
 .contact {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact__item {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .contact__link {
@@ -22,23 +29,8 @@
 }
 
 .contact__icon {
+  margin-right: 8px;
   fill: currentColor;
-}
-
-@media screen and (min-width: 768px) {
-  .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .contact__item {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  .contact__icon {
-    margin-right: 8px;
-  }
 }
 
 @media screen and (min-width: 1200px) {

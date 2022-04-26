@@ -745,6 +745,18 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__item {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .contact__link {
@@ -769,29 +781,8 @@ button {
 }
 
 .contact__icon {
+  margin-right: 8px;
   fill: currentColor;
-}
-
-@media screen and (min-width: 768px) {
-  .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .contact__item {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .contact__icon {
-    margin-right: 8px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
