@@ -63,6 +63,11 @@
   &--current {
     color: $action-color;
   }
+
+  &:hover,
+  &:focus {
+    color: $action-color;
+  }
 }
 
 .mobile-menu__social-list {
@@ -84,6 +89,11 @@
   @extend %mm;
   color: $action-color;
   padding-right: 10px;
+
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+  }
 }
 
 .mobile-menu__button {

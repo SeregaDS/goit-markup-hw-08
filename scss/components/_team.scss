@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (min-width: $min-w-dektop) {
+@media screen and (min-width: $min-w-desktop) {
   .team {
     grid-template-columns: repeat(4, calc((100% - 3 * 30px) / 4));
   }

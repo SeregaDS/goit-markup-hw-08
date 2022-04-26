@@ -582,6 +582,10 @@ button {
   color: #2196f3;
 }
 
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
+}
+
 .mobile-menu__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,6 +607,10 @@ button {
 .mobile-menu__socail-link {
   color: #2196f3;
   padding-right: 10px;
+}
+
+.mobile-menu__socail-link:hover, .mobile-menu__socail-link:focus {
+  color: #757575;
 }
 
 .mobile-menu__button {
