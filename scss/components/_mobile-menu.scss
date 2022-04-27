@@ -49,6 +49,21 @@
 .mobile-menu__link {
   @extend %mm;
   font-size: 40px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -14%;
+    width: 0;
+
+    height: 4px;
+    border-radius: 2px;
+    background-color: $action-color;
+
+    transition: left 350ms $typical-cubic, width 350ms $typical-cubic;
+  }
 
   &--tel-fz-color {
     font-size: 34px;
@@ -67,6 +82,11 @@
   &:hover,
   &:focus {
     color: $action-color;
+  }
+
+  &:hover::after {
+    left: 0;
+    width: 100%;
   }
 }
 
@@ -89,10 +109,30 @@
   @extend %mm;
   color: $action-color;
   padding-right: 10px;
+  position: relative;
 
   &:hover,
   &:focus {
     color: $secondary-text-color;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    bottom: -14%;
+    width: 0;
+
+    height: 4px;
+    border-radius: 2px;
+    background-color: $action-color;
+
+    transition: left 350ms $typical-cubic, width 350ms $typical-cubic;
+  }
+
+  &:hover::after {
+    left: 0;
+    width: calc(100% - 10px);
   }
 }
 
