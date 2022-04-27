@@ -1493,11 +1493,9 @@ button {
             flex-grow: 1;
     text-align: left;
   }
-  .footer__wrapper--second {
+  .footer__wrapper--tablet {
     margin-right: 93px;
     margin-bottom: 0;
-  }
-  .footer__wrapper--tablet {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
