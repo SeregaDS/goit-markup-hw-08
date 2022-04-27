@@ -5,10 +5,13 @@
 // !Кнопки
 
 .buttons {
+  margin-bottom: 30px;
+}
+
+.buttons__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -15px;
-  padding-bottom: 40px;
 }
 
 .buttons__item {
@@ -54,13 +57,16 @@
 
 @media screen and (min-width: $min-w-tablet) {
   .buttons {
+    margin-bottom: 40px;
+  }
+
+  .buttons__list {
     justify-content: center;
-    padding-bottom: 30px;
   }
 }
 
 @media screen and (min-width: $min-w-desktop) {
   .buttons {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 }

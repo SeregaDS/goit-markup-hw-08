@@ -1,5 +1,9 @@
-.nav {
+.nav__list {
   display: flex;
+}
+
+.nav__item {
+  position: relative;
 }
 
 .nav__link {
@@ -36,10 +40,6 @@
     border-radius: 2px;
     background-color: $action-color;
   }
-}
-
-.nav__item {
-  position: relative;
 }
 
 @media screen and (min-width: 768px) {
