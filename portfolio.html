@@ -72,6 +72,7 @@
               >Web<span class="logo__variable">Studio</span></a
             >
           </div>
+          <!-- Burger  -->
           <button class="mobile-menu__button" type="button" aria-expanded="false" data-menu-button>
             <svg aria-label="Переключатель меню" width="40" height="40">
               <use class="mobile-menu__close" href="./images/icons.svg#icon-close_40px"></use>
@@ -117,38 +118,40 @@
       <section class="section">
         <div class="container">
           <h1 class="page-title">Наше портфолио</h1>
-          <ul class="buttons">
-            <li class="buttons__item">
-              <label name="all">
-                <input type="radio" name="filter" class="buttons__input" checked />
-                <span class="buttons__filter">Все</span>
-              </label>
-            </li>
-            <li class="buttons__item">
-              <label name="web">
-                <input type="radio" name="filter" class="buttons__input" />
-                <span class="buttons__filter">Веб-сайты</span>
-              </label>
-            </li>
-            <li class="buttons__item">
-              <label name="app">
-                <input type="radio" name="filter" class="buttons__input" />
-                <span class="buttons__filter">Приложения</span>
-              </label>
-            </li>
-            <li class="buttons__item">
-              <label name="design">
-                <input type="radio" name="filter" class="buttons__input" />
-                <span class="buttons__filter">Дизайн</span>
-              </label>
-            </li>
-            <li class="buttons__item">
-              <label name="markketing">
-                <input type="radio" name="filter" class="buttons__input" />
-                <span class="buttons__filter">Маркетинг</span>
-              </label>
-            </li>
-          </ul>
+          <form name="filter">
+            <ul class="buttons">
+              <li class="buttons__item">
+                <label>
+                  <input type="radio" name="filter" class="buttons__input" checked />
+                  <span class="buttons__filter">Все</span>
+                </label>
+              </li>
+              <li class="buttons__item">
+                <label>
+                  <input type="radio" name="filter" class="buttons__input" />
+                  <span class="buttons__filter">Веб-сайты</span>
+                </label>
+              </li>
+              <li class="buttons__item">
+                <label>
+                  <input type="radio" name="filter" class="buttons__input" />
+                  <span class="buttons__filter">Приложения</span>
+                </label>
+              </li>
+              <li class="buttons__item">
+                <label>
+                  <input type="radio" name="filter" class="buttons__input" />
+                  <span class="buttons__filter">Дизайн</span>
+                </label>
+              </li>
+              <li class="buttons__item">
+                <label>
+                  <input type="radio" name="filter" class="buttons__input" />
+                  <span class="buttons__filter">Маркетинг</span>
+                </label>
+              </li>
+            </ul>
+          </form>
 
           <!-- Cases -->
 
